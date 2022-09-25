@@ -8,4 +8,10 @@ describe('Test Form component', () => {
     const name = screen.getByTestId('name-input');
     expect(name).toBeInTheDocument();
   });
+
+  test('02- Check if description input exist', () => {
+    render(<Form />);
+    const description = screen.getByTestId('description-input');
+    expect(description).toBeInTheDocument();
+  });
 });
