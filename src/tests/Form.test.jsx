@@ -45,9 +45,9 @@ describe('Test Form component', () => {
     expect(rare).toBeInTheDocument();
   });
 
-  test('08- Check if Triunfo input exist', () => {
+  test('08- Check if Trunfo input exist', () => {
     render(<Form />);
-    const triunfo = screen.getByTestId('triunfo-input');
+    const triunfo = screen.getByTestId('trunfo-input');
     expect(triunfo).toBeInTheDocument();
   });
 
