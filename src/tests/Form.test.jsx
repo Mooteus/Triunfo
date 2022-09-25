@@ -26,4 +26,10 @@ describe('Test Form component', () => {
     const attribute = screen.getByTestId('attr2-input');
     expect(attribute).toBeInTheDocument();
   });
+
+  test('05- Check if attribute 3 exist', () => {
+    render(<Form />);
+    const attribute = screen.getByTestId('attr3-input');
+    expect(attribute).toBeInTheDocument();
+  });
 });
