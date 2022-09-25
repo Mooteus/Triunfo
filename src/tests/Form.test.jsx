@@ -14,4 +14,10 @@ describe('Test Form component', () => {
     const description = screen.getByTestId('description-input');
     expect(description).toBeInTheDocument();
   });
+
+  test('03- Check if attribute 1 exist', () => {
+    render(<Form />);
+    const attribute = screen.getByTestId('attr1-input');
+    expect(attribute).toBeInTheDocument();
+  });
 });
