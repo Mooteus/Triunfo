@@ -38,4 +38,10 @@ describe('Test Form component', () => {
     const image = screen.getByTestId('image-input');
     expect(image).toBeInTheDocument();
   });
+
+  test('07- Check if rare input exist', () => {
+    render(<Form />);
+    const rare = screen.getByTestId('rare-input');
+    expect(rare).toBeInTheDocument();
+  });
 });
