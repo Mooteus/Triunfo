@@ -32,4 +32,10 @@ describe('Test Form component', () => {
     const attribute = screen.getByTestId('attr3-input');
     expect(attribute).toBeInTheDocument();
   });
+
+  test('06- Check if Image input exist', () => {
+    render(<Form />);
+    const image = screen.getByTestId('image-input');
+    expect(image).toBeInTheDocument();
+  });
 });
