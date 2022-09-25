@@ -50,4 +50,10 @@ describe('Test Form component', () => {
     const triunfo = screen.getByTestId('triunfo-input');
     expect(triunfo).toBeInTheDocument();
   });
+
+  test('09- Check if Save button exist', () => {
+    render(<Form />);
+    const saveButton = screen.getByTestId('save-button');
+    expect(saveButton).toBeInTheDocument();
+  });
 });
